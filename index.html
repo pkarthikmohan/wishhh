@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Happy Birthday, Shetty! 🎂</title>
+    <style>
+        /* General Styling */
+        body { 
+
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Container */
+        .container {
+            padding: 50px 20px;
+            min-height: 100vh;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Glowing Heading */
+        h1 {
+            font-size: 4.5em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.9),
+                         0px 0px 20px rgba(255, 215, 0, 0.8);
+            animation: glowEffect 2s infinite alternate ease-in-out;
+        }
+
+        @keyframes glowEffect {
+            0% { text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9); }
+            100% { text-shadow: 0px 0px 20px rgba(255, 215, 0, 1); }
+        }
+
+        /* Poem */
+       /* Animated Border Effect */
+/* Poem Box (No Changes Here) */
+/* Poem Box */
+/* Poem Box */
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;  
+}
+
+/* Page Styling */
+html {
+  font-family: Poppins, sans-serif;
+  color: #faf7f7;
+}
+
+body {
+  min-height: 168vh;
+  background: #0b0d15;
+  color: #a2a5b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Poem Box */
+.poem {
+  padding: 2em;
+  width: 300px;
+  background: #000105;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+ 
+}
+        /* Poem Text Styling with Glow */
+.poem p {
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1.8;
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.9),
+                 0px 0px 20px rgba(255, 215, 0, 0.8);
+    animation: glowEffect 2s infinite alternate ease-in-out;
+}
+
+/* Glowing Effect */
+@keyframes glowEffect {
+    0% { text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9); }
+    100% { text-shadow: 0px 0px 20px rgba(255, 215, 0, 1); }
+}
+
+
+/* Custom Property for Angle */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Glowing Border Effect */
+.poem::after,
+.poem::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ffeb3b, #ffeb3b00);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: spin 3s linear infinite;
+}
+
+/* Blurred Outer Glow */
+.poem::before {
+  filter: blur(1rem);
+  opacity: 0.5;
+}
+
+/* Keyframes for Rotating Glow */
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+
+
+
+        /* Play Button */
+        .btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(to right, #ff6b6b, #ff4757);
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: 0.3s;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+            animation: bounce 1.5s infinite 2s;
+        }
+
+        /* Button Bounce Effect */
+        @keyframes bounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* Fixed Cake Image */
+        .cake-container {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 1000;
+            width: 100%;
+            background: rgba(0, 0, 0, 0);
+            padding: 10px 0;
+        }
+
+        .cake {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: auto;
+    animation: wiggle 2s infinite ease-in-out; /* Wiggling Animation */
+}
+
+/* Keyframes for Wiggling */
+@keyframes wiggle {
+    0%, 100% { transform: translateX(-5px) rotate(-2deg); }
+    50% { transform: translateX(5px) rotate(2deg); }
+}
+    </style>
+</head>
+<body>
+    
+<!-- Confetti Canvas (Properly Positioned) -->
+<canvas id="confetti" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 1;"></canvas>
+    <div class="container">
+        <h1>🎂 Happy Birthday, Yuktha! 🎉</h1>
+        <p class="poem">
+            "On this special day so bright and new, <br>
+            The world shines warmer—just for you. <br>
+            A heart so kind, a soul so rare, <br>
+            Shetty, beyond compare. <br><br>
+            
+            Through laughter, tears, and dreams untold, <br>
+            Your light shines bright, your heart pure gold. <br>
+            May joy embrace you, love surround, <br>
+            And endless blessings here abound. <br><br>
+            
+            So make a wish, let worries fade, <br>
+            Today’s your time—go celebrate! 🎉✨  
+        </p>
+
+        <!-- Play Button for Audio -->
+        <button class="btn" onclick="playMusic()">🎶 Play Birthday Song</button>
+
+        <!-- Audio Element -->
+        <audio id="birthdaySong" preload="auto">
+            <source src="birthdaymp3.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Fixed Cake Image -->
+    <div class="cake-container">
+        <img src="mycake.png" class="cake" alt="Birthday Cake"> 
+        <!-- Alternative Online Image (For Testing) -->
+        <!-- <img src="https://www.cake.com/birthday-cake.png" class="cake" alt="Birthday Cake"> -->
+    </div>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('birthdaySong');
+            audio.play().catch(error => {
+                alert("Click 'Play Birthday Song' to allow the music 🎶");
+            });
+        }
+
+        // Confetti Animation
+       
+    // Confetti Animation
+    const canvas = document.getElementById("confetti");
+    const ctx = canvas.getContext("2d");
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+
+    const confettiParticles = [];
+    const colors = ["#ff6b6b", "#ff9a9e", "#f8c291", "#f6e58d"];
+
+    function ConfettiParticle(x, y, speedX, speedY, size, color) {
+        this.x = x;
+        this.y = y;
+        this.speedX = speedX;
+        this.speedY = speedY;
+        this.size = size;
+        this.color = color;
+    }
+
+    ConfettiParticle.prototype.update = function() {
+        this.y += this.speedY;
+        this.x += this.speedX;
+
+        if (this.y > canvas.height) {
+            this.y = 0;
+            this.x = Math.random() * canvas.width;
+        }
+    };
+
+    ConfettiParticle.prototype.draw = function() {
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+    };
+
+    function createConfetti() {
+        for (let i = 0; i < 100; i++) {
+            let x = Math.random() * canvas.width;
+            let y = Math.random() * canvas.height;
+            let speedX = (Math.random() - 0.5) * 2;
+            let speedY = Math.random() * 2 + 1;
+            let size = Math.random() * 4 + 2;
+            let color = colors[Math.floor(Math.random() * colors.length)];
+            confettiParticles.push(new ConfettiParticle(x, y, speedX, speedY, size, color));
+        }
+    }
+
+    function animateConfetti() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        confettiParticles.forEach(particle => {
+            particle.update();
+            particle.draw();
+        });
+        requestAnimationFrame(animateConfetti);
+    }
+
+    createConfetti();
+    animateConfetti();
+</script>
+
+
+</body>
+</html>
